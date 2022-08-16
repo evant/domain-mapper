@@ -1,0 +1,14 @@
+[versions]
+kotlin = "1.7.10"
+ksp = "1.7.10-1.0.6"
+
+[libraries]
+ksp = { module = "com.google.devtools.ksp:symbol-processing-api", version.ref = "ksp" }
+kotlinpoet-ksp = { module = "com.squareup:kotlinpoet-ksp", version = "1.12.0" }
+junit5 = { module = "org.junit.jupiter:junit-jupiter", version = "5.8.1" }
+assertk = { module = "com.willowtreeapps.assertk:assertk", version = "0.25" }
+
+[plugins]
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
